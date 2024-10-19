@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jude Ibrahim - Business driven and versatile product designer">
+    <title>Jude Ibrahim</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+    <header aria-label="Main navigation" id="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Jude Ibrahim">Jude Ibrahim</a>
+            <nav aria-label="Primary navigation" class="desktop-nav">
+                <ul>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="cta-buttons">
+                <a href="#" class="cta consultation">Get in touch</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+                <img src="icon/hamburger.svg" alt="Open navigation menu">
+            </button>
+        </div>
+        <nav id="mobile-menu" class="mobile-nav" aria-hidden="true">
+            <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="mobile-cta">
+                <div class="mobile-cta-button">Get in touch</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+      
+<section class="case-study">
+    <img src="image/classic.jpg" alt="Classic App Preview" class="case-study-img">
+    <div class="case-study-details">
+        <p class="case-study-title"></p>
+        <a href="#" class="preview-btn">
+            Preview <img src="icon/redirect.svg" alt="Redirect Icon">
+        </a>
+    </div>
+</section>
+<section class="content-section">
+    <div class="content-container">
+        <h1>Case study: Classic App</h1>
+        <p>Classic is a telemedicine platform designed to simplify access to healthcare for patients, particularly those in underserved or remote areas. The app provides an intuitive way to schedule and conduct video consultations with healthcare providers, enabling patients to receive care from the comfort of their homes.</p>
+
+        <h2>Problem Statement</h2>
+        <p>Many patients, especially older adults or those less familiar with technology, face challenges using existing telemedicine platforms. These include complicated onboarding processes, unclear scheduling systems, and unreliable video call experiences. Classic was created to address these pain points with a focus on simplicity, accessibility, and reliability.</p>
+        
+        <h2>Target Audience:</h2>
+
+        <ul>
+            <li><strong>Patients:</strong> Elderly individuals, chronic care patients, and those with limited access to in-person healthcare.</li>
+            <li><strong>Healthcare Providers:</strong> Doctors and specialists who need an efficient, all-in-one platform for managing patient appointments and conducting consultations.</li>
+        </ul>
+        <h2>Research</h2>
+        <p>I conducted a series of one-on-one interviews with 10 patients and 5 doctors. I also analyzed user feedback from competitors like Teladoc and Doctor On Demand to pinpoint common user frustration</p>
+        
+        <h2>Key Findings</h2>
+        <ul>
+          <li><strong>Patients:</strong> Experienced difficulties with complicated navigation, unclear appointment scheduling, and connectivity issues during video consultations.</li>
+        </ul>
+    </div>
+</section>
+
+
+<section class="client-cta">
+    <p>Let's create something amazing together.
+        <a href="mailto:example@gmail.com?subject=Hi%20Jude.%20I%20have%20a%20project%20for%20you" class="cta-link">
+            Get in touch <img src="icon/redirect.svg" alt="Redirect Icon">
+        </a>
+    </p>
+</section>
+
+<!-- Sticky CTA Section -->
+    <div class="cta-container">
+        <div class="cta-heading">
+            <p>Get this:</p>
+        </div>
+        <div class="cta-icons">
+            <a href="https://wa.me/message/P2VMBJTN4M7SM1" class="cta-icon" target="_blank">
+                <img src="icon/whatsapp.svg" alt="WhatsApp">
+            </a>
+            <a href="https://t.me/Gbemisola_Oyeniyi/" class="cta-icon" target="_blank">
+                <img src="icon/telegram.svg" alt="Telegram">
+            </a>
+            <a href="https://instagram.com/growithgbemi" class="cta-icon" target="_blank">
+                <img src="icon/instagram.svg" alt="Instagram">
+            </a>
+        </div>
+    </div>
+
+
+<div class="spacer"></div>
+    </main>
+
+    <footer aria-label="Footer navigation">
+        <div class="footer-container">
+            <div class="footer-column">
+                <a href="#" class="logo">Jude Ibrahim</a>
+                <p>Innovative Product Designer</p>
+            </div>
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            
+  <div class="footer-column">
+    <h3>Let's connect</h3>
+    <div class="social-icons">
+        <a href="https://instagram.com" class="icon-circle" target="_blank" rel="noopener noreferrer">
+            <img src="icon/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://linkedin.com" class="icon-circle" target="_blank" rel="noopener noreferrer">
+            <img src="icon/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://twitter.com" class="icon-circle" target="_blank" rel="noopener noreferrer">
+            <img src="icon/twitter.svg" alt="Twitter">
+        </a>
+        <a href="https://facebook.com" class="icon-circle" target="_blank" rel="noopener noreferrer">
+            <img src="icon/facebook.svg" alt="Facebook">
+        </a>
+    </div>
+</div>
+
+        </div>
+        <hr class="separator">
+        <div class="footer-bottom">
+            <p>&copy; 2024. All rights reserved.</p>
+            <a href="https://itsgbemi.github.io">Created by Gbemi</a>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            const expanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true' || false;
+            mobileMenuToggle.setAttribute('aria-expanded', !expanded);
+            mobileMenu.setAttribute('aria-hidden', expanded);
+        });
+    </script>
+</body>
+</html>

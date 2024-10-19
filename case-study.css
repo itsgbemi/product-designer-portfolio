@@ -1,0 +1,604 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    background: rgba(18, 20, 16, 1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    overflow-x: hidden;
+}
+
+
+h1, h2 {
+  font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    transition: color 0.3s; 
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Styles for the CTA container */
+.cta-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Styling for the heading text */
+.cta-heading p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+/* Container for the social icons */
+.cta-icons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Styling for each icon - Add light blue circle around icons */
+.cta-icon {
+    background-color: rgba(255, 2, 222, 1); 
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-icon:hover {
+    transform: scale(1.1);
+    background-color: #b2ebf2; /* Darker blue on hover */
+}
+
+/* Styling for the social media icons themselves */
+.cta-icon img {
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 768px) {
+  
+    .cta-container {
+        bottom: 10px;
+        right: 10px;
+        padding: 8px 12px;
+    }
+
+    .cta-heading p {
+        font-size: 16px;
+    }
+
+    .cta-icon {
+        width: 32px;
+        height: 32px;
+        padding: 8px;
+    }
+
+    .cta-icon img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+header {
+    background: transparent;
+}
+
+.spacer {
+  width: 100%;
+  height: 2rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    max-width: 1200px;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+}
+
+.desktop-nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.desktop-nav a {
+    padding: 0.8rem 1.2rem;
+    border-radius: 25px; 
+    transition: background-color 0.3s;
+}
+
+.desktop-nav a:hover, .desktop-nav a:active {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(255, 2, 255, 1);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.cta {
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.custom-request {
+    background-color: white;
+    color: rgba(53, 19, 203, 1);
+}
+
+.consultation {
+    background: rgba(255, 2, 222, 1);
+    color: white;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer; /* Indicate that it's clickable */
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 0 2rem;
+    margin-top: 0.1rem;
+    font-weight: 400;
+}
+
+.mobile-nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Display links in a column */
+    flex-direction: column; /* Stack links vertically */
+    gap: 1rem; /* Add spacing between links */
+    }
+
+.mobile-nav a {
+    margin-bottom: 0.5rem;
+    border-radius: 25px; 
+    transition: color 0.3s;
+    text-align: center;
+    color: rgba(255, 255, 255, 1); 
+    }
+
+    .mobile-nav a:hover {
+        color: rgba(255, 2, 222, 1);
+    }
+
+.mobile-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    }
+    
+.mobile-cta-button {
+    padding: 0.5rem;
+    border-radius: 15px;
+    background-color: rgba(255, 2, 222, 1);
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 0.5rem;
+    cursor: pointer; 
+    width: 100px;
+    display: inline-flex; /* Ensure the button size fits its content */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    white-space: nowrap;
+}
+
+main {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 4rem; /* Large heading */
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.case-study {
+    max-width: 1200px; /* Max width for the section */
+    margin: 3rem auto; /* Center the section */
+    padding: 0 2rem; /* Padding for smaller screens */
+}
+
+.case-study-img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    border-radius: 25px;
+    object-fit: cover; 
+}
+
+
+.case-study-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 1rem; 
+}
+
+.case-study-title {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin: 0; 
+}
+
+.preview-btn {
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 2, 222, 1);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 25px; 
+    text-decoration: none; 
+    font-size: 1rem;
+}
+
+.preview-btn img {
+    width: 1rem; /* Icon size */
+    margin-left: 0.5rem; /* Space between text and icon */
+    vertical-align: middle; 
+}
+
+.preview-btn:hover {
+    background-color: rgba(255, 2, 222, 1); 
+}
+
+/* Content Section */
+.content-section {
+    width: 100%;
+    background-color: rgba(18, 20, 16, 1); /* Matches the background of the body */
+    padding: 2rem;
+    color: rgba(255, 255, 255, 1); /* White text */
+}
+
+.content-container {
+    max-width: 1200px; /* Maintain consistent width */
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.content-section h1, .content-section h2 {
+    margin-bottom: 1rem;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.content-section ul {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+
+.content-section ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    position: relative;
+    list-style: disc;
+}
+
+/* Services section */
+.services {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(52, 52, 52, 1);
+}
+
+.services-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    padding: 3rem 2rem;
+    gap: 1rem;
+    height: auto;
+    overflow: hidden; 
+}
+
+/* Image Column */
+.services-image {
+    flex: 1 1 45%;
+    height: auto;
+    display: flex;
+}
+
+.services-image img {
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    object-fit: cover; 
+    border-radius: 25px;
+}
+
+/* Description Column */
+.services-description {
+    flex: 1 1 55%; /* 50% width for the description column */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.services-description h2 {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.services-description p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.client-cta {
+    font-size: 4rem; /* 18px equivalent */
+    font-weight: 500;
+    text-align: left; /* Left-align text */
+    margin: 3rem auto; /* Center the section horizontally with margin */
+    max-width: 1200px; /* Max width for the section */
+    padding: 0 2rem; /* Padding for smaller screens */
+}
+
+.client-cta p {
+    line-height: 1.6; /* Improves readability */
+}
+
+.cta-link {
+    color: rgba(255, 2, 222, 1); /* Link color */
+    text-decoration: none;
+    font-size: 4rem; /* Match text font size */
+}
+
+.cta-link img {
+    width: 4rem; /* Icon width (16px equivalent) */
+    margin-left: 0.5rem; /* Space between link and icon */
+    vertical-align: middle;
+}
+
+.cta-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .client-cta {
+        font-size: 1.5rem;
+    }
+    
+    .cta-link {
+      font-size: 1.5rem;
+    }
+    
+    .cta-link img {
+      width: 2rem;
+    }
+    
+    .content-container {
+      padding: 0;
+    }
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+
+       .services-container {
+        flex-direction: column; /* Stack the columns vertically */
+    }
+
+    .services-image {
+        order: 1; /* Ensure the image comes first */
+    }
+
+    .services-image img {
+      height: 300px;
+    }
+    
+        .services-description {
+        text-align: left;
+        order: 2; /* Ensure the description comes after the image */
+        padding: 0;
+    }
+}
+
+footer {
+    padding: 3rem 2rem;
+    color: rgba(255, 255, 255, 1);
+    background: transparent;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.footer-column {
+    flex: 1 1 30%;
+    margin-bottom: 1rem; 
+}
+
+/* Increase the width of the first column */
+.footer-column:first-child {
+    flex: 1 1 40%; /* Adjust this value as needed */
+}
+
+.footer-column h3 {
+    margin-bottom: 1rem;
+}
+
+.inner-padding {
+  padding-right: 1rem;
+}
+
+/* Base styles for social icons */
+.social-icons {
+    display: flex;
+    gap: 0.5rem; /* Space between icons */
+}
+
+/* Style for the clickable circle around each icon */
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem; 
+    height: 3rem; 
+    border-radius: 50%; 
+    background-color: rgba(255, 2, 222, 1); 
+    text-decoration: none; 
+}
+
+/* Style for the images inside the circles */
+.icon-circle img {
+    width: 1rem; /* Image width (1.5rem = 24px) */
+    height: 1rem; /* Image height (same as width) */
+}
+
+
+.separator {
+    max-width: 1200px;
+    margin: 1rem auto;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 1rem auto;
+}
+
+.footer-bottom p, .footer-bottom a {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-bottom a:hover {
+  color: rgba(255, 2, 222, 1);
+}
+/* Mobile styles */
+@media (max-width: 768px) {
+
+    .mobile-menu-toggle {
+        display: inline; 
+    }
+    
+    .mobile-menu-toggle img {
+        width: 2rem;
+    }
+
+    .desktop-nav, .cta-buttons {
+        display: none;
+    }
+
+    .mobile-nav[aria-hidden="false"] {
+        display: flex; /* Show mobile menu when active */
+    }
+    
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+    
+    .project-snippet__button {
+      width: 60%;
+    }
+    
+    .footer-container {
+        flex-direction: column; /* Stack footer columns on mobile */
+    }
+    
+    .footer-bottom p, .footer-bottom a {
+      font-size: 0.7rem;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-container {
+        flex-wrap: wrap; /* Allow wrapping for tablet */
+    }
+
+    .footer-column {
+        flex: 1 1 45%; /* Two columns on tablet */
+        margin-bottom: 1rem;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .footer-column {
+        flex: 1 1 20%; /* Four columns on desktop */
+    }
+}
